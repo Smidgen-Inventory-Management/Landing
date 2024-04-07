@@ -1,3 +1,39 @@
+/* Buttons */
+
+/* Button Group */
+
+.button-group-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  max-width: 10%;
+
+
+}
+
+.button-group-button {
+  transition: 150ms ease;
+  background-color: rgba(var(--smidgen-base-gray), 0.5);
+  border: none;
+  color: rgb(var(--smidgen-base-black));
+  padding: 10px 15px;
+}
+
+.button-group-button:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+
+.button-group-button:last-of-type {
+  border-radius: 0 5px 5px 0;
+}
+
+.button-group-button:hover,
+.button-group-button:focus {
+  color: rgb(var(--smidgen-base-white));
+  background-color: rgb(var(--smidgen-base-tertiary));
+
+}
+
 /* Primary Button */
 
 .button-primary {
@@ -104,7 +140,6 @@
 }
 
 /* Form Elements */
-
 .inline-label {
   display: grid;
   grid-template-columns: 1.15em auto;
@@ -170,7 +205,7 @@ input[type="radio"]:focus {
 
 .checkbox::before {
   content: "✔";
-  color: white;
+  color: rgb(var(--smidgen-base-white));
   width: 1.15em;
   height: 1.15em;
   margin: -1px;
@@ -214,7 +249,7 @@ input[type="radio"]:focus {
   transition: all ease 150ms;
   width: 25px;
   height: 25px;
-  background: white;
+  background: rgb(var(--smidgen-base-white));
   left: 4px;
   top: 4px;
   border-radius: 50%;
@@ -226,6 +261,100 @@ input[type="radio"]:focus {
 
 .toggle:checked:before {
   left: 32px;
+}
+
+
+/* Text Input */
+.text-input-container {
+  display: grid;
+  grid-template-rows: 1.7em 3em 1em;
+  gap: 10px;
+  max-width: 65.7ch;
+}
+
+.text-input-label {
+  text-align: left;
+}
+
+.text-input {
+  transition: ease 150ms;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.text-input::placeholder {
+  color: rgba(var(--smidgen-text-color), 0.8);
+}
+
+.text-input-subtitle {
+  font-size: 0.9em;
+  color: rgba(var(--smidgen-base-black), 0.3);
+}
+
+.text-input:hover,
+.text-input:focus {
+  border-width: 3px;
+}
+
+.text-input:disabled {
+  border-color: rgba(var(--smidgen-base-gray), 0.2);
+}
+
+.loading,
+.loading::placeholder,
+.loading:focus,
+.loading:hover {
+  color: rgb(var(--smidgen-base-primary));
+  border-color: rgb(var(--smidgen-base-primary));
+}
+
+.warning,
+.warning::placeholder,
+.warning:focus,
+.warning:hover {
+  color: rgb(var(--smidgen-base-warning));
+  border-color: rgb(var(--smidgen-base-warning));
+}
+
+.error,
+.error::placeholder,
+.error:focus,
+.error:hover {
+  color: rgb(var(--smidgen-base-error));
+  border-color: rgb(var(--smidgen-base-error));
+}
+
+.foot-loading {
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  margin-top: 37px;
+  width: 48px;
+  height: 48px;
+  background-color: rgb(var(--smidgen-base-primary));
+}
+
+.foot-warning {
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  margin-top: 37px;
+  width: 48px;
+  height: 48px;
+  background-color: rgb(var(--smidgen-base-warning));
+}
+
+.foot-error {
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  margin-top: 37px;
+  width: 48px;
+  height: 48px;
+  background-color: rgb(var(--smidgen-base-error));
+}
+
+.icon-right {
+  border-radius: 0 3px 3px 0;
+  max-width: 65.2ch;
+  margin-left: 65.2ch;
 }
 
 /* select */

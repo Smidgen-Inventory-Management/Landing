@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
+
 :root {
   --smidgen-base-primary: 153, 178, 221;
   --smidgen-base-secondary: 75, 41, 107;
@@ -7,7 +8,32 @@
   --smidgen-base-success: 143, 194, 125;
   --smidgen-base-warning: 226, 222, 124;
   --smidgen-base-error: 226, 124, 124;
-  --smidgen-base-gray: 119, 119, 119;
+  --smidgen-base-gray: 225, 225, 225;
+  --smidgen-base-white: 255, 255, 255;
+  --smidgen-base-black: 0, 0, 0;
+  --smidgen-background-color: 255, 255, 255;
+  --smidgen-text-color: 0, 0, 0;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --smidgen-base-primary: 153, 178, 221;
+    --smidgen-base-secondary: 75, 41, 107;
+    --smidgen-base-tertiary: 2, 93, 105;
+    --smidgen-base-success: 143, 194, 125;
+    --smidgen-base-warning: 226, 222, 124;
+    --smidgen-base-error: 226, 124, 124;
+    --smidgen-base-gray: 225, 225, 225;
+    --smidgen-base-white: 255, 255, 255;
+    --smidgen-base-black: 0, 0, 0;
+    --smidgen-background-color: 0, 0, 0;
+    --smidgen-text-color: 255, 255, 255;
+  }
+}
+
+body {
+  background-color: rgb(var(--smidgen-background-color));
 }
 
 * {
@@ -42,6 +68,7 @@ h4,
 h5 {
   letter-spacing: 4%;
   text-align: center;
+  color: rgb(var(--smidgen-text-color));
 }
 
 p,
@@ -49,10 +76,16 @@ span,
 a,
 li,
 blockquote,
-td {
+td,
+label {
+  color: rgb(var(--smidgen-text-color));
   line-height: 1.5em;
 }
 
 .dev-outline {
   border: 3px red solid;
+}
+
+.hide {
+  display: none;
 }

@@ -1,4 +1,6 @@
 import Navbar from "./components/navbar"
+import ButtonGroup from "./components/ButtonGroup"
+import TextInput from "./components/TextInput"
 import "./css/reset.css"
 import "./css/global.css"
 import "./css/components.css"
@@ -9,6 +11,7 @@ function App() {
   return (
     <div className="page-content">
       <Navbar />
+      <ButtonGroup />
       <div className="content">
 
         <button className="button-primary" disabled={false} >Log In</button>
@@ -32,15 +35,15 @@ function App() {
           <label className="inline-label"><input type="checkbox" name="checkbox" className="checkbox" /> Checkbox</label>
           <label className="inline-label"><input type="checkbox" name="checkbox" className="checkbox" /> Checkbox</label>
           <input type="checkbox" name="checkbox" className="toggle" />
-
-          <select>
-            <option>The quick brown fox jumps over the lazy dog</option>
-            <option>The quick brown fox jumps over </option>
-            <option>The quick the lazy dog</option>
-            <option>The quick dog</option>
-          </select>
+          <TextInput />
         </form>
-
+        <h2>Need to edit Select</h2>
+        <select>
+          <option>The quick brown fox jumps over the lazy dog</option>
+          <option>The quick brown fox jumps over </option>
+          <option>The quick the lazy dog</option>
+          <option>The quick dog</option>
+        </select>
 
 
       </div>
