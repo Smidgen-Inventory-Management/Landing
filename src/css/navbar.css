@@ -1,0 +1,41 @@
+header {
+  position: sticky;
+  top: 0;
+}
+
+.header-container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 2vmin;
+}
+
+.header-item {
+  display: inline;
+  padding: 0 2vmin;
+
+}
+
+.header-section:first-of-type {
+  justify-self: start;
+}
+
+.header-section:last-of-type {
+  justify-self: end;
+}
+
+.header-links {}
+
+.header-link {
+  transition: 150ms ease;
+  color: rgb(var(--smidgen-base-primary));
+}
+
+.header-link:hover {
+  color: rgb(var(--smidgen-base-tertiary));
+}
+
+.header-hero {}

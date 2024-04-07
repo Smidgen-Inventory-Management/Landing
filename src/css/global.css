@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+:root {
+  --smidgen-base-primary: 153, 178, 221;
+  --smidgen-base-secondary: 75, 41, 107;
+  --smidgen-base-tertiary: 2, 93, 105;
+  --smidgen-base-success: 143, 194, 125;
+  --smidgen-base-warning: 226, 222, 124;
+  --smidgen-base-error: 226, 124, 124;
+  --smidgen-base-gray: 119, 119, 119;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.7em;
+}
+
+h5 {
+  font-size: 1.6em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 4%;
+  text-align: center;
+}
+
+p,
+span,
+a,
+li,
+blockquote,
+td {
+  line-height: 1.5em;
+}
+
+.dev-outline {
+  border: 3px red solid;
+}
