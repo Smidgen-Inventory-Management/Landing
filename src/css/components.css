@@ -242,7 +242,7 @@ input[type="radio"]:focus {
   transition: background-color ease 0.3s;
 }
 
-.toggle:before {
+.toggle::before {
   content: "";
   display: block;
   position: absolute;
@@ -327,7 +327,7 @@ input[type="radio"]:focus {
 .foot-loading {
   border-radius: 3px 0 0 3px;
   position: absolute;
-  margin-top: 37px;
+  margin-top: 38px;
   width: 48px;
   height: 48px;
   background-color: rgb(var(--smidgen-base-primary));
@@ -336,7 +336,7 @@ input[type="radio"]:focus {
 .foot-warning {
   border-radius: 3px 0 0 3px;
   position: absolute;
-  margin-top: 37px;
+  margin-top: 38px;
   width: 48px;
   height: 48px;
   background-color: rgb(var(--smidgen-base-warning));
@@ -345,7 +345,7 @@ input[type="radio"]:focus {
 .foot-error {
   border-radius: 3px 0 0 3px;
   position: absolute;
-  margin-top: 37px;
+  margin-top: 38px;
   width: 48px;
   height: 48px;
   background-color: rgb(var(--smidgen-base-error));
@@ -353,8 +353,8 @@ input[type="radio"]:focus {
 
 .icon-right {
   border-radius: 0 3px 3px 0;
-  max-width: 65.2ch;
-  margin-left: 65.2ch;
+  max-width: 64.2ch;
+  margin-left: 64.2ch;
 }
 
 /* select */

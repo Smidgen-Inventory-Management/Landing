@@ -8,25 +8,24 @@
   --smidgen-base-success: 143, 194, 125;
   --smidgen-base-warning: 226, 222, 124;
   --smidgen-base-error: 226, 124, 124;
-  --smidgen-base-gray: 225, 225, 225;
+  --smidgen-base-gray: 170, 170, 170;
   --smidgen-base-white: 255, 255, 255;
-  --smidgen-base-black: 0, 0, 0;
   --smidgen-background-color: 255, 255, 255;
+  --smidgen-modal-background-color: 220, 220, 220;
   --smidgen-text-color: 0, 0, 0;
+  --smidgen-base-black: 0, 0, 0;
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root {
     --smidgen-base-primary: 153, 178, 221;
-    --smidgen-base-secondary: 75, 41, 107;
-    --smidgen-base-tertiary: 2, 93, 105;
+    --smidgen-base-secondary: 153, 93, 206;
+    --smidgen-base-tertiary: 55, 189, 208;
     --smidgen-base-success: 143, 194, 125;
-    --smidgen-base-warning: 226, 222, 124;
-    --smidgen-base-error: 226, 124, 124;
-    --smidgen-base-gray: 225, 225, 225;
-    --smidgen-base-white: 255, 255, 255;
-    --smidgen-base-black: 0, 0, 0;
+    --smidgen-base-warning: 255, 204, 102;
+    --smidgen-base-error: 255, 102, 102;
+    --smidgen-modal-background-color: 75, 75, 75;
     --smidgen-background-color: 0, 0, 0;
     --smidgen-text-color: 255, 255, 255;
   }
@@ -66,7 +65,7 @@ h2,
 h3,
 h4,
 h5 {
-  letter-spacing: 4%;
+  letter-spacing: 0.03em;
   text-align: center;
   color: rgb(var(--smidgen-text-color));
 }
@@ -88,4 +87,17 @@ label {
 
 .hide {
   display: none;
+}
+
+button:not(:disabled):hover,
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+.content {
+  /* display: grid;
+  grid-template-columns: repeat(4, 20vmin); */
+  width: 50%;
+  margin: auto;
 }

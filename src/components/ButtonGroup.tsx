@@ -6,6 +6,8 @@ export default function ButtonGroup() {
       <button className="button-group-button" disabled={false} >First</button>
       <button className="button-group-button" disabled={false} >Second</button>
       <button className="button-group-button" disabled={false} >Third</button>
+      <button className="button-group-button" disabled={false} >Fifth</button>
+      <button className="button-group-button" disabled={false} >Sixth</button>
     </div>
   )
 }
