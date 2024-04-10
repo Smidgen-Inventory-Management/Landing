@@ -1,7 +1,6 @@
 /* Buttons */
 
 /* Button Group */
-
 .button-group-container {
   display: flex;
   justify-content: space-between;
@@ -23,6 +22,10 @@
 
 .button-group-button:last-of-type {
   border-radius: 0 5px 5px 0;
+}
+
+.button-group-button:only-of-type {
+  border-radius: 5px;
 }
 
 .button-group-button:hover,
@@ -286,7 +289,7 @@ input[type="radio"]:focus {
 
 .text-input-subtitle {
   font-size: 0.9em;
-  color: rgba(var(--smidgen-base-black), 0.3);
+  color: rgba(var(--smidgen-text-color), 0.3);
 }
 
 .text-input:hover,

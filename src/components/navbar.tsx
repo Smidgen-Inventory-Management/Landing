@@ -1,6 +1,14 @@
 import "../css/navbar.css"
 
-export default function Navbar() {
+interface HeaderProps {
+  state: boolean;
+  setState: (state: boolean) => void;
+}
+
+const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
+  const toggleModal = () => {
+    setState(!state);
+  };
   return (
     <header>
       <nav className="header-container">
@@ -17,10 +25,12 @@ export default function Navbar() {
           </a>
         </div>
         <div className="header-section">
-          <button className="button-primary" disabled={false} >Log In</button>
+          <button onClick={toggleModal} className="button-primary" disabled={false} >Log In</button>
         </div>
       </nav>
     </header>
   )
 }
+
+export default Navbar;
 
