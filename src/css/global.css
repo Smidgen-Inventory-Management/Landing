@@ -5,9 +5,11 @@
   --smidgen-base-primary: 153, 178, 221;
   --smidgen-base-secondary: 75, 41, 107;
   --smidgen-base-tertiary: 2, 93, 105;
+
   --smidgen-base-success: 143, 194, 125;
   --smidgen-base-warning: 226, 222, 124;
   --smidgen-base-error: 226, 124, 124;
+
   --smidgen-base-gray: 170, 170, 170;
   --smidgen-base-white: 255, 255, 255;
   --smidgen-background-color: 255, 255, 255;
@@ -19,12 +21,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --smidgen-base-primary: 153, 178, 221;
     --smidgen-base-secondary: 153, 93, 206;
     --smidgen-base-tertiary: 55, 189, 208;
+
     --smidgen-base-success: 143, 194, 125;
     --smidgen-base-warning: 255, 204, 102;
     --smidgen-base-error: 255, 102, 102;
+
+    --smidgen-base-gray: 190, 190, 190;
     --smidgen-modal-background-color: 75, 75, 75;
     --smidgen-background-color: 0, 0, 0;
     --smidgen-text-color: 255, 255, 255;

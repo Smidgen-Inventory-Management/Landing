@@ -39,4 +39,6 @@ header {
   color: rgb(var(--smidgen-base-tertiary));
 }
 
-.header-hero {}
+.header-hero {
+  color: rgb(var(--smidgen-text-tertiary));
+}

@@ -19,7 +19,7 @@
   top: 50%;
   left: 50%;
   width: 75%;
-  padding: 1em;
+  padding: 2em;
   background-color: rgb(var(--smidgen-modal-background-color));
   border-radius: 7px;
   transform: translateX(-50%) translateY(-50%);
@@ -29,7 +29,7 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
   background-color: transparent;
   border: none;
@@ -42,7 +42,7 @@
 }
 
 .modal-header {
-  padding-bottom: 0.1em;
+  padding-bottom: 0.3em;
 }
 
 .modal-background-nonvisible {
