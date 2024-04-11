@@ -101,7 +101,7 @@ input[type="radio"] {
 
 .content {
   /* display: grid;
-  grid-template-columns: repeat(4, 20vmin); */
+  grid-template-columns: repeat(4, 1fr); */
   width: 50%;
   margin: auto;
 }
