@@ -1,0 +1,38 @@
+.hero {
+  padding-top: 6vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero-header {
+  font-size: 3em;
+  letter-spacing: 2px;
+  padding-bottom: 0.4em;
+}
+
+.hero-text {
+  font-size: 1.2em;
+  width: 50vmax;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.hero-button {
+  width: 14ch;
+  margin: auto;
+  flex-basis: 0;
+}
+
+.browser-container {
+  margin-top: 20%;
+  transform: scale(1.4);
+}
+
+.body {
+  background: linear-gradient(var(--smidgen-gradient));
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vmax;
+}

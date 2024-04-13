@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
-
-:root {
+[data-theme="light"] {
   --smidgen-base-primary: 153, 178, 221;
   --smidgen-base-secondary: 75, 41, 107;
-  --smidgen-base-tertiary: 2, 93, 105;
+  --smidgen-base-tertiary: 2, 83, 95;
 
   --smidgen-base-success: 143, 194, 125;
   --smidgen-base-warning: 226, 222, 124;
@@ -15,24 +14,37 @@
   --smidgen-background-color: 255, 255, 255;
   --smidgen-modal-background-color: 220, 220, 220;
   --smidgen-text-color: 0, 0, 0;
-  --smidgen-base-black: 0, 0, 0;
+  --smidgen-base-black: 17, 17, 17;
+
+  --smidgen-gradient: 246deg,
+    #DAB7F9 0%,
+    #CF78A6 23%,
+    #B878BD 50%,
+    #7A7DCB 77%,
+    #8881DC 100%;
 }
 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --smidgen-base-secondary: 153, 93, 206;
-    --smidgen-base-tertiary: 55, 189, 208;
+[data-theme="dark"] {
+  --smidgen-base-primary: 153, 178, 221;
+  --smidgen-base-secondary: 153, 93, 206;
+  --smidgen-base-tertiary: 55, 189, 208;
 
-    --smidgen-base-success: 143, 194, 125;
-    --smidgen-base-warning: 255, 204, 102;
-    --smidgen-base-error: 255, 102, 102;
+  --smidgen-base-success: 143, 194, 125;
+  --smidgen-base-warning: 255, 204, 102;
+  --smidgen-base-error: 255, 102, 102;
 
-    --smidgen-base-gray: 190, 190, 190;
-    --smidgen-modal-background-color: 75, 75, 75;
-    --smidgen-background-color: 0, 0, 0;
-    --smidgen-text-color: 255, 255, 255;
-  }
+  --smidgen-base-white: 255, 255, 255;
+  --smidgen-base-gray: 190, 190, 190;
+  --smidgen-modal-background-color: 75, 75, 75;
+  --smidgen-background-color: 17, 17, 17;
+  --smidgen-text-color: 255, 255, 255;
+    --smidgen-gradient: 246deg,
+        #B07BDF 0%,
+        #B45185 23%,
+        #5D2961 50%,
+        #2F3160 77%,
+        #363171 100%;
 }
 
 body {
@@ -42,6 +54,7 @@ body {
 * {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 h1 {
@@ -71,6 +84,7 @@ h4,
 h5 {
   letter-spacing: 0.03em;
   text-align: center;
+  font-weight: 800;
   color: rgb(var(--smidgen-text-color));
 }
 
@@ -102,6 +116,7 @@ input[type="radio"] {
 .content {
   /* display: grid;
   grid-template-columns: repeat(4, 1fr); */
+  padding-top: 50px;
   width: 50%;
   margin: auto;
 }

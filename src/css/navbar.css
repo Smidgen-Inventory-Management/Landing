@@ -25,10 +25,12 @@ header {
 }
 
 .header-section:last-of-type {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
   justify-self: end;
 }
 
-.header-links {}
 
 .header-link {
   transition: 150ms ease;

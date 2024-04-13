@@ -1,7 +1,5 @@
-import "../css/components.css"
-import ButtonGroupButton from "./ButtonGroupButton";
-
-
+import '../css/components.css';
+import ButtonGroupButton from './ButtonGroupButton';
 
 export interface ButtonProps {
   label: string;
@@ -24,7 +22,6 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ buttons }) => {
           action={button.action}
         />
       ))}
-
     </div>
   );
 };

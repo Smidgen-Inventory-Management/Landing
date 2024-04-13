@@ -1,4 +1,4 @@
-import "../css/modal.css"
+import '../css/modal.css';
 import React from 'react';
 
 interface ModalProps {
@@ -9,7 +9,6 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ header, content, state, setState }) => {
-
   const toggleModal = () => {
     setState(!state);
   };
@@ -21,11 +20,7 @@ const Modal: React.FC<ModalProps> = ({ header, content, state, setState }) => {
           X
         </button>
         <h1 className="modal-header">{header}</h1>
-        <div className="modal-content">
-          <p className="modal-text">
-            {content}
-          </p>
-        </div>
+        <div className="modal-content">{content}</div>
       </div>
       <div className="modal-background-nonvisible" onClick={toggleModal}></div>
     </div>
