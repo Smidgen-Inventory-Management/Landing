@@ -30,12 +30,12 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
         <div className="header-section">
           <ul className="header-links">
             <li className="header-item">
-              <a href="#" className="header-link">
+              <a href="#feature" className="header-link">
                 Features
               </a>
             </li>
             <li className="header-item">
-              <a href="#" className="header-link">
+              <a href="#team" className="header-link">
                 Meet the Team
               </a>
             </li>

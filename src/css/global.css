@@ -46,16 +46,20 @@
         #2F3160 77%,
         #363171 100%;
 }
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: rgb(var(--smidgen-background-color));
 }
 
-* {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  transition: background-color 300ms ease, color 300ms ease;
-}
+
 
 h1 {
   font-size: 2em;
@@ -114,5 +118,7 @@ input[type="radio"] {
 }
 
 .content {
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 500px;
 }

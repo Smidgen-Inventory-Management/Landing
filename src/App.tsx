@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Navbar, TextInput, Modal } from './components';
-import { Home } from './pages/Home';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home, Feature, Team } from './pages';
 
 import './css/reset.css';
 import './css/global.css';
@@ -38,7 +37,7 @@ function App() {
   };
 
   return (
-    <div className="body">
+    <div className="body" id="home">
       <Navbar state={loginModalOpened} setState={setLoginModalOpened} />
       <Modal
         state={loginModalOpened}
@@ -47,13 +46,19 @@ function App() {
         content={formContent()}
       />
       <div className="content">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </BrowserRouter>
+        <section>
+          <Home />
+        </section>
 
-        {/* <Home /> */}
+        <section id="feature" className="feature-container">
+          <Feature />
+          <Feature />
+          <Feature />
+        </section>
+
+        <section id="team">
+          <Team />
+        </section>
       </div>
     </div>
   );

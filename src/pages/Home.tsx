@@ -5,7 +5,7 @@ import '../css/hero.css';
 
 const Home = () => {
   return (
-    <div className="hero" id="home">
+    <div className="hero">
       <div className="grid-left">
         <h1 className="hero-header">SMIDGEN</h1>
         <p className="hero-text">
