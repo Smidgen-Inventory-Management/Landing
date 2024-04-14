@@ -39,16 +39,19 @@
   --smidgen-modal-background-color: 75, 75, 75;
   --smidgen-background-color: 17, 17, 17;
   --smidgen-text-color: 255, 255, 255;
-    --smidgen-gradient: 246deg,
-        #B07BDF 0%,
-        #B45185 23%,
-        #5D2961 50%,
-        #2F3160 77%,
-        #363171 100%;
+  
+  --smidgen-gradient: 246deg,
+    #B07BDF 0%,
+    #B45185 23%,
+    #5D2961 50%,
+    #2F3160 77%,
+    #363171 100%;
 }
+
 * {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 html {

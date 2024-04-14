@@ -1,0 +1,34 @@
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-header {}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin-top: 3ch;
+  gap: 50px;
+}
+
+.team-member {
+  max-width: 250px;
+  display: inline-block;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.team-image {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.team-name {}

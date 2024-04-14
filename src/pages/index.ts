@@ -1,3 +1,3 @@
 export { Home } from './Home'
-export { Feature } from './Feature';
+export { Feature } from '../components/Feature';
 export { Team } from './Team';

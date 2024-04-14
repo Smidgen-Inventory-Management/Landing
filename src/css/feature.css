@@ -13,10 +13,17 @@
 
 .feature-image,
 .feature-grid-left {
+  grid-row: 1;
   width: 500px;
+  margin: 0 1.5ch;
+}
+
+.feature-right {
+  grid-column: 2;
 }
 
 .feature-grid-right {
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   gap: 2ex;

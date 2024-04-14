@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Navbar, TextInput, Modal } from './components';
+import { Navbar, TextInput, Modal, Footer } from './components';
 import { Home, Feature, Team } from './pages';
 
 import './css/reset.css';
 import './css/global.css';
 import './css/forms.css';
 import './css/components.css';
-
+import placeholder from './assets/placeholder.png';
 function App() {
   const [loginModalOpened, setLoginModalOpened] = useState(false);
 
@@ -35,6 +35,7 @@ function App() {
       </form>
     );
   };
+  const featureList: string[] = ['item1', 'item2', 'item3'];
 
   return (
     <div className="body" id="home">
@@ -45,21 +46,40 @@ function App() {
         header="Login to Smidgen"
         content={formContent()}
       />
+      
       <div className="content">
         <section>
           <Home />
         </section>
 
         <section id="feature" className="feature-container">
-          <Feature />
-          <Feature />
-          <Feature />
+          <Feature
+            featureName="A feature"
+            featureBrief="A brief"
+            featureBullets={featureList}
+            featureImage={placeholder}
+          />
+          <Feature
+            featureName="A feature"
+            featureBrief="A brief"
+            featureBullets={featureList}
+            featureImage={placeholder}
+            imageRight={true}
+          />
+          <Feature
+            featureName="A feature"
+            featureBrief="A brief"
+            featureBullets={featureList}
+            featureImage={placeholder}
+          />
         </section>
 
         <section id="team">
           <Team />
         </section>
       </div>
+
+      <Footer />
     </div>
   );
 }
