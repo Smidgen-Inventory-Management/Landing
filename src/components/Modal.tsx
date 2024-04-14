@@ -27,4 +27,4 @@ const Modal: React.FC<ModalProps> = ({ header, content, state, setState }) => {
   );
 };
 
-export default Modal;
+export { Modal };

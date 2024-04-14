@@ -56,6 +56,7 @@
   color: rgb(var(--smidgen-base-black));
   padding: 5px;
 }
+
 .browser-content {
   padding-bottom: 8px;
 }
@@ -64,4 +65,22 @@
   width: 100%;
   border-radius: 0 0 4px 4px;
   margin-bottom: -10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .browser-address-bar {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .browser-address-bar {
+    width: 100%;
+  }
+
+  .browser-middle {
+    width: 23vmax;
+    padding-top: 2px;
+  }
 }

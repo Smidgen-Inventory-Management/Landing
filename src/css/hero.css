@@ -1,9 +1,20 @@
 .hero {
-  padding-top: 6vmin;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+}
+
+.grid-left {
   display: flex;
+  z-index: 10;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+}
+
+.grid-right {
+  z-index: 10;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .hero-header {
@@ -14,7 +25,7 @@
 
 .hero-text {
   font-size: 1.2em;
-  width: 50vmax;
+  width: 50vmin;
   text-align: center;
   padding-bottom: 1em;
 }
@@ -26,13 +37,20 @@
 }
 
 .browser-container {
-  margin-top: 20%;
-  transform: scale(1.4);
+  margin-top: 10%;
+  transform: translateX(15vmax) scale(1.2);
 }
 
-.body {
-  background: linear-gradient(var(--smidgen-gradient));
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vmax;
+@media only screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .browser-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    transform: scale(1);
+  }
 }

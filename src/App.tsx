@@ -1,14 +1,12 @@
 import { useState } from 'react';
-import Navbar from './components/Navbar';
-import TextInput from './components/TextInput';
-import Modal from './components/Modal';
-import BrowserWindow from './components/BrowserWindow';
-import placeholder from './assets/placeholder.png';
+import { Navbar, TextInput, Modal } from './components';
+import { Home } from './pages/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import './css/reset.css';
 import './css/global.css';
 import './css/forms.css';
 import './css/components.css';
-import './css/hero.css';
 
 function App() {
   const [loginModalOpened, setLoginModalOpened] = useState(false);
@@ -49,20 +47,13 @@ function App() {
         content={formContent()}
       />
       <div className="content">
-        <div className="hero">
-          <h1 className="hero-header">SMIDGEN</h1>
-          <p className="hero-text">
-            Reclaim a smidgen of your day with a powerful and modular logistics
-            management solution.
-          </p>
-          <button className="hero-button button-tertiary">Learn More</button>
-        </div>
-        <BrowserWindow
-          address="http://smidgen.com/"
-          content={
-            <img className="browser-image" src={placeholder} alt="placeholder" />
-          }
-        />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+
+        {/* <Home /> */}
       </div>
     </div>
   );

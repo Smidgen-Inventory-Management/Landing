@@ -15,9 +15,9 @@ interface TextInputProps {
 const TextInput: React.FC<TextInputProps> = ({
   autoComplete,
   inputType = 'text',
-  withIcon,
-  type,
-  disabled,
+  withIcon = false,
+  type = 'info',
+  disabled = false,
   placeholder,
   rightAlignedIcon,
   label,
@@ -45,4 +45,4 @@ const TextInput: React.FC<TextInputProps> = ({
   );
 };
 
-export default TextInput;
+export { TextInput };

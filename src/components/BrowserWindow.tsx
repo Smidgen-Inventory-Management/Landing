@@ -11,20 +11,32 @@ const BrowserWindow: React.FC<BrowserProps> = ({ address, content }) => {
     <div className="browser-container">
       <div className="browser-row">
         <div className="browser-column browser-left">
-          <span className="browser-dot" style={{ background: '#ED594A' }}></span>
-          <span className="browser-dot" style={{ background: '#FDD800' }}></span>
-          <span className="browser-dot" style={{ background: '#5AC05A' }}></span>
+          <span
+            className="browser-dot"
+            style={{ background: '#ED594A' }}
+          ></span>
+          <span
+            className="browser-dot"
+            style={{ background: '#FDD800' }}
+          ></span>
+          <span
+            className="browser-dot"
+            style={{ background: '#5AC05A' }}
+          ></span>
         </div>
         <div className="browser-column browser-middle">
-          <input disabled={true} type="text" className="browser-address-bar" value={address} />
+          <input
+            disabled={true}
+            type="text"
+            className="browser-address-bar"
+            value={address}
+          />
         </div>
       </div>
 
-      <div className="browser-content">
-        {content}
-      </div>
+      <div className="browser-content">{content}</div>
     </div>
   );
 };
 
-export default BrowserWindow;
+export { BrowserWindow };

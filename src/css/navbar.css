@@ -2,7 +2,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 999999;
-}
+
+  }
 
 .header-container {
   background-color: white;
@@ -12,6 +13,7 @@ header {
   align-items: center;
   text-transform: uppercase;
   padding: 2vmin;
+  border-bottom: 2px solid rgba(var(--smidgen-base-black), 0.3);
 }
 
 .header-item {
