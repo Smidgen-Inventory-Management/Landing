@@ -38,6 +38,7 @@
 
 .browser-container {
   margin-top: 10%;
+  max-height: 670px;
   transform: translateX(15vmax) scale(1.2);
 }
 

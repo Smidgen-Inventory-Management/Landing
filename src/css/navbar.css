@@ -3,7 +3,7 @@ header {
   top: 0;
   z-index: 999999;
 
-  }
+}
 
 .header-container {
   background-color: white;
@@ -41,6 +41,7 @@ header {
 
 .header-link:hover {
   color: rgb(var(--smidgen-base-tertiary));
+  text-decoration: none;
 }
 
 .header-hero {

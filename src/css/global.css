@@ -39,7 +39,7 @@
   --smidgen-modal-background-color: 75, 75, 75;
   --smidgen-background-color: 17, 17, 17;
   --smidgen-text-color: 255, 255, 255;
-  
+
   --smidgen-gradient: 246deg,
     #B07BDF 0%,
     #B45185 23%,
@@ -106,6 +106,15 @@ label {
   line-height: 1.5em;
 }
 
+a {
+  color: rgb(var(--smidgen-base-primary));
+}
+
+a:hover {
+  color: rgb(var(--smidgen-base-secondary));
+  text-decoration: underline;
+}
+
 .dev-outline {
   border: 3px red solid;
 }
@@ -123,5 +132,9 @@ input[type="radio"] {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 500px;
+  gap: 300px;
+}
+
+section:first-of-type {
+  margin-top: 10vmin;
 }

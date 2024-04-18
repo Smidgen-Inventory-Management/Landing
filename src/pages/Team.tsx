@@ -1,5 +1,8 @@
 import '../css/team.css';
-import placeholder from '../assets/placeholder.png';
+import jose from '../assets/profiles/jose-hernandez.jpg';
+import evelyn from '../assets/profiles/evelyn-cao.jpg';
+import giuliana from '../assets/profiles/giuliana-russi.jpg';
+import laura from '../assets/profiles/laura-castro.jpg';
 import { TeamMember } from '../components/TeamMember';
 const Team = () => {
   return (
@@ -8,20 +11,16 @@ const Team = () => {
       <ul className="team-list">
         <TeamMember
           name="Jose Hernandez"
-          portrait={placeholder}
+          portrait={jose}
           title="Founder, Developer"
         />
-        <TeamMember name="Evelyn Cao" portrait={placeholder} title="Designer" />
+        <TeamMember name="Evelyn Cao" portrait={evelyn} title="Designer" />
         <TeamMember
-          name="Giulianna Russi"
-          portrait={placeholder}
+          name="Giuliana Russi"
+          portrait={giuliana}
           title="Developer, Cybersecurity Analyst"
         />
-        <TeamMember
-          name="Laura Castro"
-          portrait={placeholder}
-          title="Developer"
-        />
+        <TeamMember name="Laura Castro" portrait={laura} title="Developer" />
       </ul>
     </div>
   );

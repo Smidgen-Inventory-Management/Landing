@@ -12,7 +12,9 @@ const Home = () => {
           Reclaim a smidgen of your day with a powerful and modular logistics
           management solution.
         </p>
-        <button className="hero-button button-tertiary">Learn More</button>
+        <a href="#feature">
+          <button className="hero-button button-tertiary">Learn More</button>
+        </a>
       </div>
       <div className="grid-right">
         <BrowserWindow

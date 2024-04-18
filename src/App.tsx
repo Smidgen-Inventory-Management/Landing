@@ -53,22 +53,23 @@ function App() {
         </section>
 
         <section id="feature" className="feature-container">
+          <h1>Features</h1>
           <Feature
             featureName="A feature"
-            featureBrief="A brief"
+            featureBrief="The quick brown fox jumps over the lazy dog"
             featureBullets={featureList}
             featureImage={placeholder}
           />
           <Feature
             featureName="A feature"
-            featureBrief="A brief"
+            featureBrief="The quick brown fox jumps over the lazy dog"
             featureBullets={featureList}
             featureImage={placeholder}
             imageRight={true}
           />
           <Feature
             featureName="A feature"
-            featureBrief="A brief"
+            featureBrief="The quick brown fox jumps over the lazy dog"
             featureBullets={featureList}
             featureImage={placeholder}
           />
