@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import logo from "../assets/logo.png"
 import '../css/navbar.css';
 
 interface HeaderProps {
@@ -48,7 +48,7 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
         </div>
         <div className="header-section">
           <a href="#home" className="header-link">
-            <h1 className="header-hero">Smidgen</h1>
+            <img src={logo} width="250" className="header-hero" alt="Smidgen Logo" />
           </a>
         </div>
         <div className="header-section">

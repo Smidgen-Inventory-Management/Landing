@@ -1,0 +1,60 @@
+Date : 2024-04-17 22:35:41
+Directory : c:\Users\JHern\Documents\dev-projects\smidgen\landing\src
+Total : 28 files,  1398 codes, 13 comments, 226 blanks, all 1637 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| CSS            |         11 |        893 |         12 |        168 |      1,073 |
+| TypeScript JSX |         13 |        495 |          0 |         56 |        551 |
+| TypeScript     |          3 |          9 |          1 |          2 |         12 |
+| XML            |          1 |          1 |          0 |          0 |          1 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                       | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                          |         28 |      1,398 |         13 |        226 |      1,637 |
+| . (Files)                                                                                  |          3 |         88 |          1 |         12 |        101 |
+| assets                                                                                     |          1 |          1 |          0 |          0 |          1 |
+| components                                                                                 |         10 |        353 |          0 |         40 |        393 |
+| css                                                                                        |         11 |        893 |         12 |        168 |      1,073 |
+| pages                                                                                      |          3 |         63 |          0 |          6 |         69 |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                   | language       | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\App.tsx                          | TypeScript JSX |         80 |          0 |          9 |         89 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\assets\react.svg                 | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\BrowserWindow.tsx     | TypeScript JSX |         38 |          0 |          5 |         43 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\ButtonGroup.tsx       | TypeScript JSX |         25 |          0 |          5 |         30 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\ButtonGroupButton.tsx | TypeScript JSX |         21 |          0 |          3 |         24 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\Feature.tsx           | TypeScript JSX |         42 |          0 |          4 |         46 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\Footer.tsx            | TypeScript JSX |         54 |          0 |          3 |         57 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\Modal.tsx             | TypeScript JSX |         26 |          0 |          5 |         31 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\Navbar.tsx            | TypeScript JSX |         79 |          0 |          5 |         84 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\TeamMember.tsx        | TypeScript JSX |         17 |          0 |          5 |         22 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\TextInput.tsx         | TypeScript JSX |         45 |          0 |          4 |         49 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\components\index.ts              | TypeScript     |          6 |          0 |          1 |          7 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\BrowserWindow.css            | CSS            |         70 |          0 |         16 |         86 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\components.css               | CSS            |        305 |         12 |         63 |        380 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\feature.css                  | CSS            |         48 |          0 |          8 |         56 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\footer.css                   | CSS            |         34 |          0 |          8 |         42 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\forms.css                    | CSS            |         10 |          0 |          1 |         11 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\global.css                   | CSS            |        112 |          0 |         28 |        140 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\hero.css                     | CSS            |         49 |          0 |          8 |         57 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\modal.css                    | CSS            |         48 |          0 |          8 |         56 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\navbar.css                   | CSS            |         39 |          0 |         10 |         49 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\reset.css                    | CSS            |        149 |          0 |         13 |        162 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\css\team.css                     | CSS            |         29 |          0 |          5 |         34 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\main.tsx                         | TypeScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\pages\Home.tsx                   | TypeScript JSX |         32 |          0 |          4 |         36 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\pages\Team.tsx                   | TypeScript JSX |         28 |          0 |          2 |         30 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\pages\index.ts                   | TypeScript     |          3 |          0 |          0 |          3 |
+| c:\Users\JHern\Documents\dev-projects\smidgen\landing\src\vite-env.d.ts                    | TypeScript     |          0 |          1 |          1 |          2 |
+| Total                                                                                      |                |      1,398 |         13 |        226 |      1,637 |
++--------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
