@@ -1,12 +1,13 @@
-import placeholder from '../assets/placeholder.png';
 import '../css/feature.css';
 
 interface FeatureProps {
   featureName: string;
   featureBrief: string;
   featureBullets?: string[];
-  featureImage: string;
+  featureImage?: string;
   imageRight?: boolean;
+  id?: string;
+  customClass?: string;
 }
 
 const Feature: React.FC<FeatureProps> = ({
@@ -15,16 +16,18 @@ const Feature: React.FC<FeatureProps> = ({
   featureBullets,
   featureImage,
   imageRight,
+  id,
+  customClass
 }) => {
   return (
-    <div className="feature" id="home">
-      <img
+    <div className={`${customClass ? customClass : ''} feature`} id={id} >
+      {featureImage ? <img
         className={`feature-grid-left feature-image ${
           imageRight ? 'feature-right' : ''
         }`}
         src={featureImage}
         alt={featureBrief}
-      />
+      /> : null}
       <div className="feature-grid-right">
         <h2>{featureName}</h2>
         <p>{featureBrief}</p>

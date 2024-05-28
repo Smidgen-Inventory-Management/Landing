@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Navbar, TextInput, Modal, Footer } from './components';
+import { Navbar, TextInput, Modal, Footer, TextInputCategory } from './components';
 import { Home, Feature, Team } from './pages';
 
 import './css/reset.css';
@@ -16,14 +16,14 @@ function App() {
         <TextInput
           label="Username"
           disabled={false}
-          withIcon={false}
+          withIcon={true}
           autoComplete="username"
         />
         <TextInput
           label="Password"
           disabled={false}
           withIcon={false}
-          inputType="password"
+          inputType={TextInputCategory.password}
           autoComplete="current-password"
         />
         <div>
@@ -73,6 +73,18 @@ function App() {
             featureBullets={featureList}
             featureImage={placeholder}
           />
+          <section id="cta" className="call-to-action">
+            <div className="left">
+              <h2>Ready to get started?</h2>
+              <h2>Sign Up or Contact Us.</h2>
+            </div>
+            <div className="right">
+              <button className="button-primary" style={{ marginRight: '20px' }}>
+              Pricing
+              </button>
+              <button className="button-tertiary">Contact Us</button>
+            </div>
+          </section>
         </section>
 
         <section id="team">

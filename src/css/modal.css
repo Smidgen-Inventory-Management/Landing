@@ -51,6 +51,7 @@
   cursor: pointer;
 }
 
-.modal-content {}
-
-.modal-text {}
+.modal-content {
+  overflow-y: scroll;
+  max-height: 60vh;
+}

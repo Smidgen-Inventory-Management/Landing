@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
 [data-theme="light"] {
-  --smidgen-base-primary: 153, 178, 221;
+  --smidgen-base-primary: 110, 135, 178;
   --smidgen-base-secondary: 128, 70, 183;
   --smidgen-base-tertiary: 3, 149, 171;
 
@@ -26,7 +26,7 @@
 
 
 [data-theme="dark"] {
-  --smidgen-base-primary: 153, 178, 221;
+  --smidgen-base-primary: 110, 135, 178;
   --smidgen-base-secondary: 153, 93, 206;
   --smidgen-base-tertiary: 55, 189, 208;
 
@@ -61,8 +61,6 @@ html {
 body {
   background-color: rgb(var(--smidgen-background-color));
 }
-
-
 
 h1 {
   font-size: 2em;
@@ -137,4 +135,9 @@ input[type="radio"] {
 
 section:first-of-type {
   margin-top: 10vmin;
+}
+
+.call-to-action{
+  display: flex;
+  gap: 20ch;
 }

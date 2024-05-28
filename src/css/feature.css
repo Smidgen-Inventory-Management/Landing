@@ -8,7 +8,7 @@
 
 .feature {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto;
 }
 
 .feature-image,
@@ -32,6 +32,17 @@
 .feature-list {
   list-style: inside disc;
   padding-top: 1.2ex;
+}
+
+.no-image {
+  width: 65%;
+  margin: auto;
+}
+
+.no-image p,
+.no-image h2{
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {

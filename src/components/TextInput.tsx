@@ -1,5 +1,15 @@
 import '../css/components.css';
 
+enum TextInputCategory {
+  info = "info",
+  text = "text",
+  password = "password",
+  loading = "loading",
+  success = "success",
+  warning = "warning",
+  error = "error"
+}
+
 interface TextInputProps {
   type?: string;
   disabled: boolean;
@@ -8,13 +18,13 @@ interface TextInputProps {
   label: string;
   supportiveText?: string;
   withIcon: boolean;
-  inputType?: string;
+  inputType?: TextInputCategory;
   autoComplete?: string;
 }
 
 const TextInput: React.FC<TextInputProps> = ({
   autoComplete,
-  inputType = 'text',
+  inputType = TextInputCategory.info,
   withIcon = false,
   type = 'info',
   disabled = false,
@@ -45,4 +55,4 @@ const TextInput: React.FC<TextInputProps> = ({
   );
 };
 
-export { TextInput };
+export { TextInput, TextInputCategory };

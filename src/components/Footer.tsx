@@ -1,8 +1,21 @@
+import { useState } from 'react'
+import { Privacy } from './Privacy';
+import { Modal } from './Modal';
 import '../css/footer.css';
 
 const Footer = () => {
+  const [privacyModalOpened, setPrivacyModalOpened] = useState(false);
+  const toggleModal = () => {
+    setPrivacyModalOpened(!privacyModalOpened);
+  };
   return (
     <footer>
+      <Modal
+        state={privacyModalOpened}
+        setState={setPrivacyModalOpened}
+        header="Smidgen Privacy Policy"
+        content={Privacy()}
+      />
       <div className="footer-container">
         <div className="footer-left">
           <div className="subcontainer-left">
@@ -11,12 +24,9 @@ const Footer = () => {
             </a>
           </div>
           <div className="subcontainer-right">
-            <h4 className="footer-cta">Ready to Learn More?</h4>
+            <h4 className="footer-cta">Reclaim a Smidgen of your day</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Smidgen aims to simplify and automate common tasks that logisticians conduct on a daily basis so they can focus on the effective distribution of materiel, as well as maintain an accurate record keeping book of receiving, issuance, audits, surpluses, amongst other logistical tasks.
             </p>
           </div>
         </div>
@@ -47,7 +57,7 @@ const Footer = () => {
       </div>
       <span className="footer-credits">
         Copyright {new Date().getFullYear()} © Smidgen Inc. All rights
-        reserved. <a href="">Privacy Policy</a>
+        reserved.&nbsp;<a onClick={toggleModal} >Privacy Policy</a>
       </span>
     </footer>
   );
