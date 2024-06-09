@@ -56,6 +56,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 100px;
 }
 
 body {
@@ -113,6 +114,30 @@ a:hover {
   text-decoration: underline;
 }
 
+.toc ul {
+  --padding-level: 2ch;
+
+  &:nth-child(2) {
+    padding-left: var(--padding-level);
+  }
+
+  &:nth-child(3) {
+    padding-left: calc(var(--padding-level) + 1);
+  }
+
+  &:nth-child(4) {
+    padding-left: calc(var(--padding-level) + 2);
+  }
+
+  &:nth-child(5) {
+    padding-left: calc(var(--padding-level) + 3);
+  }
+
+  &:nth-child(6) {
+    padding-left: calc(var(--padding-level) + 4);
+  }
+}
+
 .dev-outline {
   border: 3px red solid;
 }
@@ -134,13 +159,20 @@ input[type="radio"] {
 }
 
 section:first-of-type {
-  margin-top: 10vmin;
-}
-section:first-of-type{
+  margin-top: 5vmin;
   padding-bottom: 15ex;
 }
 
-.call-to-action{
+.call-to-action {
   display: flex;
   gap: 20ch;
+}
+
+.body {
+  width: 80%;
+  margin: auto;
+}
+
+.toc {
+  padding-top: 3ex;
 }

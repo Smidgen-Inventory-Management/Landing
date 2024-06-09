@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { Privacy } from './Privacy';
 import { Modal } from './Modal';
 import '../css/footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [privacyModalOpened, setPrivacyModalOpened] = useState(false);
@@ -24,9 +25,15 @@ const Footer = () => {
             </a>
           </div>
           <div className="subcontainer-right">
-            <h5 aria-hidden={true} className="footer-cta">Reclaim a Smidgen of your day</h5>
+            <h5 aria-hidden={true} className="footer-cta">
+              Reclaim a Smidgen of your day
+            </h5>
             <p>
-              Smidgen aims to simplify and automate common tasks that logisticians conduct on a daily basis so they can focus on the effective distribution of materiel, as well as maintain an accurate record keeping book of receiving, issuance, audits, surpluses, amongst other logistical tasks.
+              Smidgen aims to simplify and automate common tasks that
+              logisticians conduct on a daily basis so they can focus on the
+              effective distribution of materiel, as well as maintain an
+              accurate record keeping book of receiving, issuance, audits,
+              surpluses, amongst other logistical tasks.
             </p>
           </div>
         </div>
@@ -44,7 +51,7 @@ const Footer = () => {
           </ul>
           <ul className="footer-links">
             <li className="footer-link">
-              <a href="#">About</a>
+              <Link to="about">About</Link>
             </li>
             <li className="footer-link">
               <a href="#">FAQ</a>
@@ -57,7 +64,7 @@ const Footer = () => {
       </div>
       <span className="footer-credits">
         Copyright {new Date().getFullYear()} © Smidgen Inc. All rights
-        reserved.&nbsp;<a onClick={toggleModal} >Privacy Policy</a>
+        reserved.&nbsp;<Link to="privacy">Privacy Policy</Link>
       </span>
     </footer>
   );

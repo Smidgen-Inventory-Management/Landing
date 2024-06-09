@@ -7,7 +7,7 @@ import {
   TextInputCategory,
 } from './components';
 import { Routes, Route, Outlet } from 'react-router-dom';
-import { Home, About } from './pages';
+import { Home, About, Privacy } from './pages';
 import './css/reset.css';
 import './css/global.css';
 import './css/forms.css';
@@ -15,12 +15,13 @@ import './css/components.css';
 
 function App() {
   return (
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-        </Route>
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="privacy" element={<Privacy />} />
+      </Route>
+    </Routes>
   );
 }
 

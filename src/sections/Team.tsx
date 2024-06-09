@@ -21,7 +21,6 @@ const Team = () => {
           portrait={giuliana}
           title="Developer, Cybersecurity Analyst"
         />
-        <TeamMember name="Laura Castro" portrait={laura} title="Developer" />
       </ul>
     </div>
   );
