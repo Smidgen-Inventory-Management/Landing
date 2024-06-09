@@ -24,7 +24,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="subcontainer-right">
-            <h4 className="footer-cta">Reclaim a Smidgen of your day</h4>
+            <h5 aria-hidden={true} className="footer-cta">Reclaim a Smidgen of your day</h5>
             <p>
               Smidgen aims to simplify and automate common tasks that logisticians conduct on a daily basis so they can focus on the effective distribution of materiel, as well as maintain an accurate record keeping book of receiving, issuance, audits, surpluses, amongst other logistical tasks.
             </p>
@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="footer-right">
           <ul className="footer-links">
             <li className="footer-link">
-              <a href="#">GitHub</a>
+              <a href="https://github.com/">GitHub</a>
             </li>
             <li className="footer-link">
               <a href="#">Suport</a>

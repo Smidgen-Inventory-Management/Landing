@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
 [data-theme="light"] {
-  --smidgen-base-primary: 110, 135, 178;
+  --smidgen-base-primary: 90, 115, 158;
   --smidgen-base-secondary: 128, 70, 183;
-  --smidgen-base-tertiary: 3, 149, 171;
+  --smidgen-base-tertiary: 0, 109, 131;
 
   --smidgen-base-success: 143, 194, 125;
   --smidgen-base-warning: 226, 222, 124;
@@ -135,6 +135,9 @@ input[type="radio"] {
 
 section:first-of-type {
   margin-top: 10vmin;
+}
+section:first-of-type{
+  padding-bottom: 15ex;
 }
 
 .call-to-action{

@@ -1,8 +1,10 @@
 .footer-container {
   display: flex;
   flex-direction: row;
+  border-top: 1px black solid;
   justify-content: space-around;
-  padding: 10ex 0 2ex;
+  margin: 10ex 0 2ex;
+  padding-top: 5ex;
   width: 100%;
 
 }

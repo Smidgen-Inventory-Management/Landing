@@ -13,6 +13,7 @@ const ButtonGroupButton: React.FC<ButtonGroupProps> = ({
     <button
       onClick={() => action()}
       disabled={disabled}
+      aria-label={label}
       className="button-group-button"
     >
       {label}

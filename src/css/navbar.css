@@ -36,6 +36,7 @@ header {
 
 .header-link {
   transition: 150ms ease;
+  font-weight: 400;
   color: rgb(var(--smidgen-base-primary));
 }
 

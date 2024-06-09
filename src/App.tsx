@@ -1,28 +1,38 @@
 import { useState } from 'react';
-import { Navbar, TextInput, Modal, Footer, TextInputCategory } from './components';
-import { Home, Feature, Team } from './pages';
-
+import {
+  Navbar,
+  TextInput,
+  Modal,
+  Footer,
+  TextInputCategory,
+} from './components';
+import { Routes, Route, Outlet } from 'react-router-dom';
+import { Home, About } from './pages';
 import './css/reset.css';
 import './css/global.css';
 import './css/forms.css';
 import './css/components.css';
-import placeholder from './assets/placeholder.png';
-function App() {
-  const [loginModalOpened, setLoginModalOpened] = useState(false);
 
+function App() {
+  return (
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+  );
+}
+
+function Layout() {
+  const [loginModalOpened, setLoginModalOpened] = useState(false);
   const formContent = () => {
     return (
       <form action="" method="GET" className="login-button-container">
-        <TextInput
-          label="Username"
-          disabled={false}
-          withIcon={true}
-          autoComplete="username"
-        />
+        <TextInput label="Username" disabled={false} autoComplete="username" />
         <TextInput
           label="Password"
           disabled={false}
-          withIcon={false}
           inputType={TextInputCategory.password}
           autoComplete="current-password"
         />
@@ -35,10 +45,8 @@ function App() {
       </form>
     );
   };
-  const featureList: string[] = ['item1', 'item2', 'item3'];
-
   return (
-    <div className="body" id="home">
+    <div>
       <Navbar state={loginModalOpened} setState={setLoginModalOpened} />
       <Modal
         state={loginModalOpened}
@@ -46,52 +54,7 @@ function App() {
         header="Login to Smidgen"
         content={formContent()}
       />
-      
-      <div className="content">
-        <section>
-          <Home />
-        </section>
-
-        <section id="feature" className="feature-container">
-          <h1>Features</h1>
-          <Feature
-            featureName="A feature"
-            featureBrief="The quick brown fox jumps over the lazy dog"
-            featureBullets={featureList}
-            featureImage={placeholder}
-          />
-          <Feature
-            featureName="A feature"
-            featureBrief="The quick brown fox jumps over the lazy dog"
-            featureBullets={featureList}
-            featureImage={placeholder}
-            imageRight={true}
-          />
-          <Feature
-            featureName="A feature"
-            featureBrief="The quick brown fox jumps over the lazy dog"
-            featureBullets={featureList}
-            featureImage={placeholder}
-          />
-          <section id="cta" className="call-to-action">
-            <div className="left">
-              <h2>Ready to get started?</h2>
-              <h2>Sign Up or Contact Us.</h2>
-            </div>
-            <div className="right">
-              <button className="button-primary" style={{ marginRight: '20px' }}>
-              Pricing
-              </button>
-              <button className="button-tertiary">Contact Us</button>
-            </div>
-          </section>
-        </section>
-
-        <section id="team">
-          <Team />
-        </section>
-      </div>
-
+      <Outlet />
       <Footer />
     </div>
   );

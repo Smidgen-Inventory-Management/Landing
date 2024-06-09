@@ -8,8 +8,8 @@ interface BrowserProps {
 
 const BrowserWindow: React.FC<BrowserProps> = ({ address, content }) => {
   return (
-    <div className="browser-container">
-      <div className="browser-row">
+    <div className="browser-container" role="presentation">
+      <div className="browser-row" aria-hidden={true}>
         <div className="browser-column browser-left">
           <span
             className="browser-dot"

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import logo from "../assets/logo.png"
 import '../css/navbar.css';
 
@@ -47,9 +48,9 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
           </ul>
         </div>
         <div className="header-section">
-          <a href="#home" className="header-link">
+          <Link to="/" className="header-link">
             <img src={logo} width="250" className="header-hero" alt="Smidgen Logo" />
-          </a>
+          </Link>
         </div>
         <div className="header-section">
           <div
@@ -60,8 +61,9 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
               justifyContent: 'center',
             }}
           >
-            <p style={{ color: 'black' }}>Toggle Dark Mode</p>
+            <p style={{ color: 'black' }} id="toggle-dark" >Toggle Dark Mode</p>
             <input
+              aria-labelledby='toggle-dark'
               type="checkbox"
               className="toggle"
               onClick={toggleDarkMode}
@@ -71,6 +73,7 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
             onClick={toggleModal}
             className="button-primary"
             disabled={false}
+            aria-label="Click Here to Login"
           >
             Log In
           </button>

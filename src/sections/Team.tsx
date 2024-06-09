@@ -4,6 +4,7 @@ import evelyn from '../assets/profiles/evelyn-cao.jpg';
 import giuliana from '../assets/profiles/giuliana-russi.jpg';
 import laura from '../assets/profiles/laura-castro.jpg';
 import { TeamMember } from '../components/TeamMember';
+
 const Team = () => {
   return (
     <div className="team-container" id="home">

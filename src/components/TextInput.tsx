@@ -17,7 +17,7 @@ interface TextInputProps {
   rightAlignedIcon?: boolean;
   label: string;
   supportiveText?: string;
-  withIcon: boolean;
+  withIcon?: boolean;
   inputType?: TextInputCategory;
   autoComplete?: string;
 }
@@ -25,7 +25,7 @@ interface TextInputProps {
 const TextInput: React.FC<TextInputProps> = ({
   autoComplete,
   inputType = TextInputCategory.info,
-  withIcon = false,
+  withIcon,
   type = 'info',
   disabled = false,
   placeholder,
@@ -35,22 +35,17 @@ const TextInput: React.FC<TextInputProps> = ({
 }) => {
   return (
     <div className="text-input-container">
-      <h4 className="text-input-label">{label}</h4>
+      <h4 aria-hidden={true} className="text-input-label">{label}</h4>
       <input
         autoComplete={autoComplete}
         disabled={disabled}
         className={`text-input ${type}`}
         type={inputType}
+        aria-label={label}
         placeholder={placeholder}
       />
-      {withIcon ? (
-        <div
-          className={`foot-${type} ${rightAlignedIcon ? 'icon-right' : ''}`}
-        />
-      ) : (
-        ''
-      )}
-      <p className="text-input-subtitle">{supportiveText}</p>
+      {withIcon ? (<div className={`foot-${type} ${rightAlignedIcon ? 'icon-right' : ''}`} />) : null}
+      {supportiveText ? <p className="text-input-subtitle" aria-hidden={true}>{supportiveText}</p> : null}
     </div>
   );
 };

@@ -1,12 +1,12 @@
 .modal-area {
   position: fixed;
-  z-index: 999;
+  z-index: 999999;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   backdrop-filter: blur(2px);
-  transition: transform 150ms ease;
+  transition: opacity 150ms ease;
   transform: scale(1);
 }
 
