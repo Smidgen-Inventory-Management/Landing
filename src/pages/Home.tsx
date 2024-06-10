@@ -39,23 +39,15 @@ const Home = () => {
       <section id="feature" className="feature-container">
         <h1>Features</h1>
         <Feature
-          featureName="A feature"
-          featureBrief="The quick brown fox jumps over the lazy dog"
-          featureBullets={featureList}
+          featureName="Modular Asset Logging"
+          featureBrief="Smidgen assists you in tracking all types of assets. Managing a new type of asset? All you have to do is define its type, and it's ready to track!"
           featureImage={placeholder}
         />
         <Feature
-          featureName="A feature"
-          featureBrief="The quick brown fox jumps over the lazy dog"
-          featureBullets={featureList}
+          featureName="Detailed Audit Trails"
+          featureBrief="Every time any action is taken on an asset, whether it's being added to inventory, removed from inventoried, modified, or anything else, there will always be a detailed audit trail!"
           featureImage={placeholder}
           imageRight={true}
-        />
-        <Feature
-          featureName="A feature"
-          featureBrief="The quick brown fox jumps over the lazy dog"
-          featureBullets={featureList}
-          featureImage={placeholder}
         />
         <section id="cta" className="call-to-action">
           <div className="left">

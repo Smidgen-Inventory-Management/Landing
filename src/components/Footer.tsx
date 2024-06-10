@@ -40,7 +40,13 @@ const Footer = () => {
         <div className="footer-right">
           <ul className="footer-links">
             <li className="footer-link">
-              <a href="https://github.com/">GitHub</a>
+              <a
+                href="https://github.com/Smidgen-Inventory-Management/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
             </li>
             <li className="footer-link">
               <a href="#">Suport</a>
@@ -54,10 +60,16 @@ const Footer = () => {
               <Link to="about">About</Link>
             </li>
             <li className="footer-link">
-              <a href="#">FAQ</a>
+              <Link to="faq">FAQ</Link>
             </li>
             <li className="footer-link">
-              <a href="#">API Documentation</a>
+              <a
+                href="https://github.com/Smidgen-Inventory-Management/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                API Documentation
+              </a>
             </li>
           </ul>
         </div>

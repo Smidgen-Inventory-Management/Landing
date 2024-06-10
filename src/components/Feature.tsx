@@ -30,7 +30,7 @@ const Feature: React.FC<FeatureProps> = ({
       /> : null}
       <div className="feature-grid-right">
         <h2>{featureName}</h2>
-        <p>{featureBrief}</p>
+        <p style={{maxWidth: "50ch"}}>{featureBrief}</p>
         {featureBullets && featureBullets.length > 0 && (
           <ul className="feature-list-container">
             {featureBullets.map((bullet, index) => (
