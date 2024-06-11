@@ -56,7 +56,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 100px;
+  scroll-padding: 160px;
 }
 
 body {
@@ -114,6 +114,17 @@ a:hover {
   text-decoration: underline;
 }
 
+button:not(:disabled):hover,
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+section:first-of-type {
+  margin-top: 5vmin;
+  padding-bottom: 15ex;
+}
+
 .toc ul {
   --padding-level: 2ch;
 
@@ -146,22 +157,12 @@ a:hover {
   display: none;
 }
 
-button:not(:disabled):hover,
-input[type="checkbox"],
-input[type="radio"] {
-  cursor: pointer;
-}
-
 .content {
   display: flex;
   flex-direction: column;
   gap: 300px;
 }
 
-section:first-of-type {
-  margin-top: 5vmin;
-  padding-bottom: 15ex;
-}
 
 .call-to-action {
   display: flex;

@@ -9,17 +9,16 @@ header {
   background-color: white;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  min-height: 150px;
   justify-items: center;
   align-items: center;
   text-transform: uppercase;
-  padding: 2vmin;
   border-bottom: 2px solid rgba(var(--smidgen-base-black), 0.3);
+  padding: 0 5ch;
 }
 
 .header-item {
   display: inline;
-  padding: 0 2vmin;
-
 }
 
 .header-section:first-of-type {
@@ -47,4 +46,29 @@ header {
 
 .header-hero {
   color: rgb(var(--smidgen-text-tertiary));
+}
+
+
+.hamburger-menu {
+  display: none;
+  color: rgb(var(--smidgen-base-black));
+  font-size: 2em;
+  border: none;
+  background: transparent;
+}
+
+.nav-hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .hamburger-menu {
+    display: inline;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }

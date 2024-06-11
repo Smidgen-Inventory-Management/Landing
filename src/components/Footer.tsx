@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-left">
           <div className="subcontainer-left">
-            <a href="#">
+            <Link to="/">
               <h1>SMIDGEN</h1>
-            </a>
+            </Link>
           </div>
           <div className="subcontainer-right">
             <h5 aria-hidden={true} className="footer-cta">

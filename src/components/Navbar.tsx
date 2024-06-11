@@ -8,14 +8,43 @@ interface HeaderProps {
   setState: (state: boolean) => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ state, setState }) => {
+const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
+  const [menuInactive, setMenuInactive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuInactive(!menuInactive);
+  };
+
   const toggleModal = () => {
     setState(!state);
   };
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', 'light');
+    
+    // For first page render, if screen size is less than or equal to specified, hide the menu
+    if (window.innerWidth <= 750 && !menuInactive) {
+      setMenuInactive(true);
+    } else {
+      setMenuInactive(false);
+    }
+
+    const handleResize = () => {
+      if (window.innerWidth <= 750 && !menuInactive) {
+        setMenuInactive(true);
+      } else {
+        setMenuInactive(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
+
   const toggleDarkMode = () => {
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
@@ -28,7 +57,15 @@ const Header: React.FC<HeaderProps> = ({ state, setState }) => {
   return (
     <header>
       <nav className="header-container">
-        <div className="header-section">
+        <button
+          className="hamburger-menu"
+          aria-label="Toggle navigation"
+          onClick={toggleMenu}
+        >
+          &#9776;
+        </button>
+
+        <div className={`header-section ${menuInactive && 'nav-hidden'}`}>
           <ul className="header-links">
             <li className="header-item">
               <Link to="about" className="header-link">
@@ -37,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ state, setState }) => {
             </li>
           </ul>
         </div>
-        <div className="header-section">
+        <div className={`header-section ${menuInactive && 'nav-hidden'}`}>
           <Link to="/" className="header-link">
             <img
               src={logo}
@@ -47,7 +84,7 @@ const Header: React.FC<HeaderProps> = ({ state, setState }) => {
             />
           </Link>
         </div>
-        <div className="header-section">
+        <div className={`header-section`}>
           <div
             style={{
               display: 'flex',
@@ -80,4 +117,4 @@ const Header: React.FC<HeaderProps> = ({ state, setState }) => {
   );
 };
 
-export { Header as Navbar };
+export { Navbar };
