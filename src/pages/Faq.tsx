@@ -12,8 +12,19 @@ function FAQ() {
         <section>
           <h1 style={{ paddingBottom: '3ex' }}>Frequently Asked Questions</h1>
           <Accordion>
-            <AccordionItem title="my first item!">
-              <p>Hello!</p>
+            <AccordionItem title="What is Smidgen?">
+              <p>
+                Smidgen aims to simplify and automate common tasks that
+                logisticians conduct on a daily basis so they can focus on the
+                effective distribution of materiel, as well as maintain an
+                accurate record keeping book of receiving, issuance, audits,
+                surpluses, amongst other logistical tasks.
+              </p>
+              <p>
+                Our goal is to create a logistics management solution that
+                allows for granular control over the data input as well as
+                notifications to a variety of mediums
+              </p>
             </AccordionItem>
           </Accordion>
         </section>
