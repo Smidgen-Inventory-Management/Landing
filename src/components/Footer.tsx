@@ -1,22 +1,10 @@
-import { useState } from 'react';
-import { Privacy } from './Privacy';
-import { Modal } from './Modal';
+import React from 'react';
 import '../css/footer.css';
 import { Link } from 'react-router-dom';
 
-const Footer = () => {
-  const [privacyModalOpened, setPrivacyModalOpened] = useState(false);
-  const toggleModal = () => {
-    setPrivacyModalOpened(!privacyModalOpened);
-  };
+const Footer: React.FC = () => {
   return (
     <footer>
-      <Modal
-        state={privacyModalOpened}
-        setState={setPrivacyModalOpened}
-        header="Smidgen Privacy Policy"
-        content={Privacy()}
-      />
       <div className="footer-container">
         <div className="footer-left">
           <div className="subcontainer-left">
