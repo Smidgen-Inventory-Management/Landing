@@ -6,6 +6,5 @@ export * from './Navbar';
 export * from './TextInput';
 export * from './Footer';
 export * from './TableOfContents';
-export * from './ScrollToTop';
 export { AccordionContainer as Accordion } from './accordion/AccordionContainer';
 export { AccordionItem } from './accordion/AccordionItem';

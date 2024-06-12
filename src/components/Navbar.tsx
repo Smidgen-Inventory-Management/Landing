@@ -108,7 +108,6 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
             <button
               onClick={toggleModal}
               className={`button-primary`}
-              disabled={false}
               aria-label="Click Here to Login"
             >
               Log In
