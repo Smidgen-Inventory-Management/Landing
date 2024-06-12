@@ -1,10 +1,12 @@
 import { BrowserWindow } from '../components';
-import { Feature, Team } from '../sections';
+import { Feature } from '../sections';
 import placeholder from '../assets/placeholder.png';
+import { Link, useNavigate } from 'react-router-dom';
 import '../css/hero.css';
 
 const Home = () => {
-  const featureList: string[] = ['item1', 'item2', 'item3'];
+  const navigate = useNavigate();
+
   return (
     <div className="home-container">
       <section>
@@ -55,16 +57,21 @@ const Home = () => {
             <h2>Sign Up or Contact Us.</h2>
           </div>
           <div className="right">
-            <button className="button-tertiary" style={{ marginRight: '20px' }}>
+            <button
+              className="button-tertiary"
+              style={{ marginRight: '20px' }}
+              onClick={() => navigate('/pricing')}
+            >
               Pricing
             </button>
-            <button className="button-tertiary">Contact Us</button>
+            <button
+              className="button-tertiary"
+              onClick={() => navigate('/contact')}
+            >
+              Contact Us
+            </button>
           </div>
         </section>
-      </section>
-
-      <section id="team">
-        <Team />
       </section>
     </div>
   );

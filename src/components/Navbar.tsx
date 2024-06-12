@@ -68,6 +68,16 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
         <div className={`header-section ${menuInactive && 'nav-hidden'}`}>
           <ul className="header-links">
             <li className="header-item">
+              <Link to="pricing" className="header-link">
+                Pricing
+              </Link>
+            </li>
+            <li className="header-item">
+              <Link to="support" className="header-link">
+                Support
+              </Link>
+            </li>
+            <li className="header-item">
               <Link to="about" className="header-link">
                 About Us
               </Link>

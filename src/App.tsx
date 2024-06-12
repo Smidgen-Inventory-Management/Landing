@@ -8,6 +8,7 @@ import {
 } from './components';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import { Home, About, Privacy, FAQ } from './pages';
+import { NotFound } from './pages/errors';
 import './css/reset.css';
 import './css/global.css';
 import './css/forms.css';
@@ -21,6 +22,10 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="faq" element={<FAQ />} />
         <Route path="privacy" element={<Privacy />} />
+        <Route path="pricing" element={<Home />} />
+        <Route path="support" element={<Home />} />
+        <Route path="contact" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

@@ -2,7 +2,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 999999;
-
+  margin-bottom: 5ex !important;
 }
 
 .header-container {
@@ -32,8 +32,13 @@ header {
   justify-self: end;
 }
 
+.header-links{
+  display: flex;
+  gap: 2ch;
+}
 
 .header-link {
+  text-transform: uppercase;
   transition: 150ms ease;
   font-weight: 400;
   color: rgb(var(--smidgen-base-primary));

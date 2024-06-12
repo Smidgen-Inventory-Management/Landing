@@ -45,10 +45,10 @@ const Footer: React.FC = () => {
           </ul>
           <ul className="footer-links">
             <li className="footer-link">
-              <Link to="about">About</Link>
+              <Link to="/about">About</Link>
             </li>
             <li className="footer-link">
-              <Link to="faq">FAQ</Link>
+              <Link to="/faq">FAQ</Link>
             </li>
             <li className="footer-link">
               <a
@@ -58,6 +58,14 @@ const Footer: React.FC = () => {
               >
                 API Documentation
               </a>
+            </li>
+          </ul>
+          <ul className="footer-links">
+            <li className="footer-link">
+              <Link to="/pricing">Pricing</Link>
+            </li>
+            <li className="footer-link">
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>

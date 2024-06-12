@@ -120,9 +120,10 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-section:first-of-type {
-  margin-top: 5vmin;
-  padding-bottom: 15ex;
+.home-container{
+  display: flex;
+  flex-direction: column;
+  gap: 300px;
 }
 
 .toc ul {
@@ -160,7 +161,7 @@ section:first-of-type {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 300px;
+  gap: 5ex;
 }
 
 

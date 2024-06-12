@@ -17,12 +17,17 @@
 }
 
 .accordion-header {
-  color: rgb(var(--smidgen-text-color));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
   position: relative;
   text-transform: capitalize;
   padding: 0;
+  color: rgb(var(--smidgen-text-color));
   background: none;
   border: none;
+  width: 100%;
 }
 
 .accordion-icon {
@@ -88,6 +93,6 @@
   opacity: 0;
 }
 
-.accordion-body p{
+.accordion-body p {
   padding-bottom: 2ex;
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   Accordion,
   AccordionItem,
@@ -24,6 +25,17 @@ function FAQ() {
                 Our goal is to create a logistics management solution that
                 allows for granular control over the data input as well as
                 notifications to a variety of mediums
+              </p>
+            </AccordionItem>
+            <AccordionItem title="Who is developing Smidgen?">
+              <p>
+                Smidgen is being developed by just three people, those are the
+                people you see in our <Link to="/about">about</Link> page!
+              </p>
+              <p>
+                Although the team is small, they are a powerhouse with a diverse
+                background with emphasis on developing new technologies that
+                aide different populations in simplifying their lifes.
               </p>
             </AccordionItem>
           </Accordion>

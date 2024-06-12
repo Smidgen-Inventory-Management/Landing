@@ -20,15 +20,14 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 
   return (
     <div className="accordion-item" {...rest}>
-      <button onClick={toggleOpen} className="accordion-header">
+      <button className="accordion-header" onClick={toggleOpen}>
         {title}
+        <span
+          className={`accordion-icon accordion-icon-${
+            isOpen ? 'shown' : 'hidden'
+          }`}
+        />
       </button>
-      <span
-        className={`accordion-icon accordion-icon-${
-          isOpen ? 'shown' : 'hidden'
-        }`}
-        onClick={toggleOpen}
-      />
       <div
         className={`accordion-body ${isOpen ? '' : 'hidden'}`}
         aria-hidden={!isOpen ? true : false}
