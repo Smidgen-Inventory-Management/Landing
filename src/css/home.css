@@ -1,0 +1,18 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 300px;
+}
+
+.call-to-action {
+  display: flex;
+  gap: 20ch;
+}
+
+@media only screen and (max-width: 768px) {
+  .call-to-action{
+    flex-direction: column;
+    gap: 2ch;
+    align-items: center;
+  }
+}

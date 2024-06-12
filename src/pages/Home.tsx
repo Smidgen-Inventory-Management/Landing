@@ -1,8 +1,10 @@
 import { BrowserWindow } from '../components';
 import { Feature } from '../sections';
 import placeholder from '../assets/placeholder.png';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../css/hero.css';
+import '../css/home.css';
+
 
 const Home = () => {
   const navigate = useNavigate();
