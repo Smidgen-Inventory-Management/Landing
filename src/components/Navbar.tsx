@@ -10,7 +10,7 @@ interface HeaderProps {
 
 const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
   const [menuInactive, setMenuInactive] = useState(false);
-
+  const isMobbile = window.innerWidth <= 750;
   const toggleMenu = () => {
     setMenuInactive(!menuInactive);
   };
@@ -22,27 +22,13 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', 'light');
-    
+
     // For first page render, if screen size is less than or equal to specified, hide the menu
-    if (window.innerWidth <= 750 && !menuInactive) {
+    if (isMobbile && !menuInactive) {
       setMenuInactive(true);
     } else {
       setMenuInactive(false);
     }
-
-    const handleResize = () => {
-      if (window.innerWidth <= 750 && !menuInactive) {
-        setMenuInactive(true);
-      } else {
-        setMenuInactive(false);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
   }, []);
 
   const toggleDarkMode = () => {
@@ -54,6 +40,7 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
       document.documentElement.setAttribute('data-theme', 'light');
     }
   };
+
   return (
     <header>
       <nav className="header-container">
@@ -64,8 +51,21 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
         >
           &#9776;
         </button>
-
-        <div className={`header-section ${menuInactive && 'nav-hidden'}`}>
+        <div className={`header-section`}>
+          <Link to="/" className="header-link">
+            <img
+              src={logo}
+              width="300"
+              className="header-hero"
+              alt="Smidgen Logo"
+            />
+          </Link>
+        </div>
+        <div
+          className={`header-section ${
+            isMobbile && menuInactive && 'nav-hidden'
+          }`}
+        >
           <ul className="header-links">
             <li className="header-item">
               <Link to="pricing" className="header-link">
@@ -84,25 +84,12 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
             </li>
           </ul>
         </div>
-        <div className={`header-section ${menuInactive && 'nav-hidden'}`}>
-          <Link to="/" className="header-link">
-            <img
-              src={logo}
-              width="300"
-              className="header-hero"
-              alt="Smidgen Logo"
-            />
-          </Link>
-        </div>
-        <div className={`header-section`}>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
+        <div
+          className={`header-section  ${
+            isMobbile && menuInactive && 'nav-hidden'
+          }`}
+        >
+          <div className="darkmode-toggle">
             <p style={{ color: 'black' }} id="toggle-dark">
               Toggle Dark Mode
             </p>
@@ -113,14 +100,20 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
               onClick={toggleDarkMode}
             />
           </div>
-          <button
-            onClick={toggleModal}
-            className="button-primary"
-            disabled={false}
-            aria-label="Click Here to Login"
+          <div
+            className={`login-button ${
+              isMobbile && menuInactive && 'nav-hidden'
+            }`}
           >
-            Log In
-          </button>
+            <button
+              onClick={toggleModal}
+              className={`button-primary`}
+              disabled={false}
+              aria-label="Click Here to Login"
+            >
+              Log In
+            </button>
+          </div>
         </div>
       </nav>
     </header>

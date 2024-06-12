@@ -120,12 +120,6 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-.home-container{
-  display: flex;
-  flex-direction: column;
-  gap: 300px;
-}
-
 .toc ul {
   --padding-level: 2ch;
 
@@ -162,12 +156,6 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   gap: 5ex;
-}
-
-
-.call-to-action {
-  display: flex;
-  gap: 20ch;
 }
 
 .body {
