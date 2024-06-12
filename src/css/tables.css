@@ -1,0 +1,41 @@
+.table-grayed {
+  filter: opacity(0.3);
+}
+
+.pt {
+  margin-top: 5ex;
+  width: 100%;
+  text-align: center;
+}
+
+.pt-header-container {
+  height: 5ex;
+}
+
+.pt-header-row {}
+
+.pt-header-item {
+  vertical-align: middle;
+}
+
+.pt-body-container {}
+
+.pt-body-row {
+  border: 2px solid red;
+  border-radius: 5px;
+  height: 10ex;
+}
+
+.pt-body-row-data:first-child {
+  width: 35ch;
+}
+
+.pt-body-row-data {
+  border: 2px solid red;
+  vertical-align: middle;
+}
+
+.pt-body-row-data:not(:first-child) {
+  font-size: 1.5em;
+  font-weight:500;
+}
