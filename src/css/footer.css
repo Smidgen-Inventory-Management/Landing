@@ -1,12 +1,12 @@
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   border-top: 1px rgb(var(--smidgen-text-color)) solid;
   justify-content: space-around;
   margin: 10ex 0 2ex;
   margin-bottom: 0;
   padding-top: 5ex;
-  padding-bottom: 4ex;
   width: 100%;
   background-color: rgb(var(--smidgen-base-white));
 }
@@ -46,8 +46,7 @@
 }
 
 .footer-credits {
-  position: absolute;
-  bottom: -175%;
+  flex: 1 1 100%;
   width: 100%;
   text-align: center;
   color: rgb(var(--smidgen-base-black));
