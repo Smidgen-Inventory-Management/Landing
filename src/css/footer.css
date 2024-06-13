@@ -2,13 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  border-top: 1px rgb(var(--smidgen-text-color)) solid;
   justify-content: space-around;
-  margin: 10ex 0 2ex;
-  margin-bottom: 0;
+  /* margin: 5ex 0; */
   padding-top: 5ex;
+  padding-bottom: 3ex;
   width: 100%;
   background-color: rgb(var(--smidgen-base-white));
+  border-top: 1px rgb(var(--smidgen-text-color)) solid;
 }
 
 .footer-container p,
