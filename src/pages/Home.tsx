@@ -5,12 +5,16 @@ import { useNavigate } from 'react-router-dom';
 import '../css/hero.css';
 import '../css/home.css';
 
-
 const Home = () => {
   const navigate = useNavigate();
 
   return (
     <div className="home-container">
+      <div className="squares-container" aria-hidden>
+        <div className="square-1"></div>
+        <div className="square-2"></div>
+        <div className="square-3"></div>
+      </div>
       <section>
         <div className="hero">
           <div className="grid-left">

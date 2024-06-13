@@ -6,13 +6,12 @@ header {
 }
 
 .header-container {
-  background-color: rgb(var(--smidgen-base-white));
   display: flex;
-  min-height: 150px;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
   border-bottom: 2px solid rgba(var(--smidgen-base-black), 0.3);
+  background-color: rgb(var(--smidgen-base-white));
   padding: 0 5ch;
 }
 
@@ -96,12 +95,13 @@ header {
   .header-container {
     padding-bottom: 3ex;
   }
-    .header-links {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 2ch;
-    }
+
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2ch;
+  }
 
   .header-section:nth-child(2) {
     order: 0;

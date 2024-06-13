@@ -3,22 +3,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .login-button-container .text-input-container {
   width: 100%;
 }
 
-.contact-header{
+.contact-header {
   margin-top: 5ex;
   margin-bottom: 3ex;
 }
-.contact-header *{
+
+.contact-header * {
   padding-bottom: 1ex !important;
 }
 
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +28,7 @@
   margin: auto;
 }
 
-.user-contact{
+.user-contact {
   display: flex;
   flex-direction: column;
   gap: 5ex;
@@ -35,18 +36,18 @@
   justify-content: space-between;
 }
 
-.user-comments{
+.user-comments {
   max-width: unset;
   display: flex;
   flex-direction: column;
 }
 
-.user-comments textarea{
+.user-comments textarea {
   position: relative;
   box-sizing: border-box;
   min-width: 100%;
 }
 
-.contact-submit{
+.contact-submit {
   width: 10ch;
 }

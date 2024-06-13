@@ -22,14 +22,14 @@
   left: 50%;
   width: 75%;
   padding: 2em;
-  background-color: rgb(var(--smidgen-modal-background-color));
   border-radius: 7px;
+  background-color: rgb(var(--smidgen-modal-background-color));
   transform: translateX(-50%) translateY(-50%);
 }
 
 .modal-close-button {
   position: absolute;
-  top: 15px;
+  top: 0;
   right: 15px;
   font-size: 1.5em;
   font-weight: 600;
