@@ -4,8 +4,8 @@ function Privacy() {
   return (
     <section className="body" id="privacy">
       <div>
-        <h1>Smidgen, LLC. Privacy Policy</h1>
-        <TableOfContents prefix="privacy" headerLevels={['h1', 'h2']} />
+        <h1 id="top" >Smidgen, LLC. Privacy Policy</h1>
+        <TableOfContents headerLevels={['h1','h2']} />
         <p style={{ marginTop: '1ex' }}>
           Smidgen, LLC. operates the https://replace.me/ website, which provides
           the SERVICE.
@@ -28,7 +28,7 @@ function Privacy() {
           unless otherwise defined in this Privacy Policy.
         </p>
 
-        <h2 style={{ marginTop: '2ex' }}>Information Collection and Use</h2>
+        <h2 id="info-collection" style={{ marginTop: '2ex' }}>Information Collection and Use</h2>
         <p style={{ marginTop: '1ex' }}>
           For a better experience while using our Service, we may require you to
           provide us with certain personally identifiable information, including
@@ -36,7 +36,7 @@ function Privacy() {
           information that we collect will be used to contact or identify you.
         </p>
 
-        <h2 style={{ marginTop: '2ex' }}>Log Data</h2>
+        <h2 id="logs" style={{ marginTop: '2ex' }}>Log Data</h2>
         <p style={{ marginTop: '1ex' }}>
           We want to inform you that whenever you visit our Service, we collect
           information that your browser sends to us that is called Log Data.
@@ -46,7 +46,7 @@ function Privacy() {
           pages, and other statistics.
         </p>
 
-        <h2 style={{ marginTop: '2ex' }}>Cookies</h2>
+        <h2 id="cookies" style={{ marginTop: '2ex' }}>Cookies</h2>
         <p style={{ marginTop: '1ex' }}>
           Cookies are files with small amount of data that is commonly used an
           anonymous unique identifier. These are sent to your browser from the
@@ -60,7 +60,7 @@ function Privacy() {
           portions of our Service.
         </p>
 
-        <h2 style={{ marginTop: '2ex' }}>Service Providers</h2>
+        <h2 id="providers" style={{ marginTop: '2ex' }}>Service Providers</h2>
         <p style={{ marginTop: '1ex' }}>
           We may employ third-party companies and individuals due to the
           following reasons:
@@ -78,7 +78,7 @@ function Privacy() {
           to disclose or use the information for any other purpose.
         </p>
 
-        <h2 style={{ marginTop: '2ex' }}>Security</h2>
+        <h2 id="security" style={{ marginTop: '2ex' }}>Security</h2>
         <p style={{ marginTop: '1ex' }}>
           We value your trust in providing us your Personal Information, thus we
           are striving to use commercially acceptable means of protecting it.
@@ -87,7 +87,7 @@ function Privacy() {
           cannot guarantee its absolute security.
         </p>
 
-        <h2 style={{ marginTop: '2ex' }}>Links to Other Sites</h2>
+        <h2 id="external-links" style={{ marginTop: '2ex' }}>Links to Other Sites</h2>
         <p style={{ marginTop: '1ex' }}>
           Our Service may contain links to other sites. If you click on a
           third-party link, you will be directed to that site. Note that these
@@ -107,7 +107,7 @@ function Privacy() {
           that we will be able to do necessary actions.
         </p>
 
-        <h2 style={{ marginTop: '2ex' }}>Changes to This Privacy Policy</h2>
+        <h2 id="changes" style={{ marginTop: '2ex' }}>Changes to This Privacy Policy</h2>
         <p style={{ marginTop: '1ex' }}>
           We may update our Privacy Policy from time to time. Thus, we advise
           you to review this page periodically for any changes. We will notify
@@ -116,7 +116,7 @@ function Privacy() {
           page.
         </p>
 
-        <h2 style={{ marginTop: '2ex' }}>Contact Us</h2>
+        <h2 id="contact" style={{ marginTop: '2ex' }}>Contact Us</h2>
         <p style={{ marginTop: '1ex' }}>
           If you have any questions or suggestions about our Privacy Policy, do
           not hesitate to contact us.

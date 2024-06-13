@@ -1,71 +1,62 @@
 import React, { useEffect, useState } from 'react';
 
-interface TOCItem {
+interface Heading {
   id: string;
   text: string;
   level: number;
 }
 
 interface TableOfContentsProps {
-  prefix: string;
   headerLevels: string[];
 }
 
-const TableOfContents: React.FC<TableOfContentsProps> = ({
-  prefix,
-  headerLevels,
-}) => {
-  const [tocItems, setTocItems] = useState<TOCItem[]>([]);
+const TableOfContents: React.FC<TableOfContentsProps> = ({ headerLevels }) => {
+  const [headings, setHeadings] = useState<Heading[]>([]);
 
   useEffect(() => {
     const headerSelector = headerLevels
       .map((level) => `section ${level}`)
-      .join(', ');
-    const headers = document.querySelectorAll<HTMLElement>(headerSelector);
-    const items: TOCItem[] = [];
+      .join(',');
+    const elements = Array.from(document.querySelectorAll(headerSelector)).map(
+      (element) => ({
+        id: element.id,
+        text: element.innerHTML,
+        level: Number(element.nodeName.charAt(1)),
+      })
+    );
 
-    headers.forEach((header, index) => {
-      const id = `${prefix.toLowerCase()}-${index + 1}`;
-      if (!header.id) {
-        header.id = id;
-      }
-      const level = parseInt(header.tagName.substring(1), 10);
-      items.push({
-        id: header.id,
-        text: header.textContent || `${header.tagName} ${index + 1}`,
-        level,
-      });
-    });
-
-    setTocItems(items);
+    setHeadings(elements);
   }, [headerLevels]);
 
-  const renderTOCItems = (items: TOCItem[], currentLevel: number) => {
-    return (
-      <ul>
-        {items
-          .filter((item) => item.level === currentLevel)
-          .map((item) => (
-            <li key={item.id}>
-              <a href={`#${item.id}`}>{item.text}</a>
-              {renderTOCItems(
-                items.filter(
-                  (i) => i.level > currentLevel && i.id.startsWith(`${prefix}-`)
-                ),
-                currentLevel + 1
-              )}
-            </li>
-          ))}
-      </ul>
-    );
-  };
-
   return (
-    <div id="toc" className="toc">
-      <h2>Table of Contents</h2>
-      {renderTOCItems(tocItems, 1)}
-    </div>
+    <nav className="toc-container">
+      <ul className="toc">
+        {headings.map((heading) => (
+          <li key={heading.text} className={getClassName(heading.level)}>
+            <a href={`#${heading.id}`}>{heading.text}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 
+const getClassName = (level: number): string => {
+  switch (level) {
+    case 1:
+      return 'toc-l1';
+    case 2:
+      return 'toc-l2';
+    case 3:
+      return 'toc-l3';
+    case 4:
+      return 'toc-l4';
+    case 5:
+      return 'toc-l5';
+    case 6:
+      return 'toc-l6';
+    default:
+      return '';
+  }
+};
 export { TableOfContents };
