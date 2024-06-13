@@ -35,8 +35,7 @@ function Contact() {
               textArea
               inputType={TextInputCategory.text}
               type="info"
-              placeholder="The 's' in the logo makes it look like midget."
-              label="Additional Comments"
+              label="Comments"
             />
             <button className="button-tertiary contact-submit">Submit</button>
           </form>

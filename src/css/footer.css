@@ -1,12 +1,19 @@
 .footer-container {
   display: flex;
   flex-direction: row;
-  border-top: 1px black solid;
+  border-top: 1px rgb(var(--smidgen-text-color)) solid;
   justify-content: space-around;
   margin: 10ex 0 2ex;
+  margin-bottom: 0;
   padding-top: 5ex;
+  padding-bottom: 4ex;
   width: 100%;
+  background-color: rgb(var(--smidgen-base-white));
+}
 
+.footer-container p,
+.footer-container h1 {
+  color: rgb(var(--smidgen-base-black));
 }
 
 .footer-left {
@@ -18,6 +25,7 @@
 
 .footer-cta {
   text-align: left;
+  color: rgb(var(--smidgen-base-black));
 }
 
 .subcontainer-left {}
@@ -38,10 +46,11 @@
 }
 
 .footer-credits {
-  display: block;
+  position: absolute;
+  bottom: -175%;
   width: 100%;
   text-align: center;
-  padding-bottom: 20px;
+  color: rgb(var(--smidgen-base-black));
 }
 
 @media only screen and (max-width: 1000px) {

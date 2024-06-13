@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="body">
       <div className="content">
-        <section>
+        <section style={{marginTop:'5ex'}}>
           <h2>What is Smidgen?</h2>
           <p>
             Smidgen aims to simplify and automate common tasks that logisticians

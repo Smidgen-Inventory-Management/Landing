@@ -21,8 +21,15 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', 'light');
-
+    if (
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) {
+      setIsDarkMode(true);
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
     // For first page render, if screen size is less than or equal to specified, hide the menu
     if (isMobbile && !menuInactive) {
       setMenuInactive(true);
@@ -94,6 +101,8 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
               Toggle Dark Mode
             </p>
             <input
+              checked={isDarkMode}
+              readOnly
               aria-labelledby="toggle-dark"
               type="checkbox"
               className="toggle"

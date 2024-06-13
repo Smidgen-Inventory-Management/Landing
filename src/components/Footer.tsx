@@ -69,11 +69,11 @@ const Footer: React.FC = () => {
             </li>
           </ul>
         </div>
+        <span className="footer-credits">
+          Copyright {new Date().getFullYear()} © Smidgen Inc. All rights
+          reserved.&nbsp;<Link to="privacy">Privacy Policy</Link>
+        </span>
       </div>
-      <span className="footer-credits">
-        Copyright {new Date().getFullYear()} © Smidgen Inc. All rights
-        reserved.&nbsp;<Link to="privacy">Privacy Policy</Link>
-      </span>
     </footer>
   );
 };
