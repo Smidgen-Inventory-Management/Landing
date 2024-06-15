@@ -48,7 +48,7 @@
   z-index: 1;
   height: 100%;
   transform: translateX(calc(var(--offset) * 2));
-  background-color: rgb(55, 189, 208);
+  background-color: rgb(var(--smidgen-base-tertiary));
   animation: square-3-slide 2s ease;
 }
 

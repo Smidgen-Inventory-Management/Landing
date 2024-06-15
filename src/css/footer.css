@@ -45,16 +45,20 @@
 }
 
 .footer-link a {
-  color: rgb(var(--smidgen-base-secondary));
+  color: rgb(var(--smidgen-base-white));
 }
 
 .footer-credits {
-  border-top: 2.5px solid rgb(153, 93, 206);
+  border-top: 2.5px solid rgb(179, 123, 228);
   margin-top: 20px;
   padding-top: 15px;
   width: 63%;
   text-align: center;
   color: rgb(var(--smidgen-base-white));
+}
+
+.footer-credits a {
+  color: rgb(179, 123, 228);
 }
 
 @media only screen and (max-width: 1000px) {

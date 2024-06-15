@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import '../css/navbar.css';
 
@@ -59,14 +59,14 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
           &#9776;
         </button>
         <div className={`header-section`}>
-          <Link to="/" className="header-link">
+          <NavLink to="/" className="header-link">
             <img
               src={logo}
               width="300"
               className="header-hero"
               alt="Smidgen Logo"
             />
-          </Link>
+          </NavLink>
         </div>
         <div
           className={`header-section ${
@@ -75,19 +75,19 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
         >
           <ul className="header-links">
             <li className="header-item">
-              <Link to="pricing" className="header-link">
+              <NavLink to="pricing" className={`header-link`}>
                 Pricing
-              </Link>
+              </NavLink>
             </li>
             <li className="header-item">
-              <Link to="support" className="header-link">
+              <NavLink to="support" className="header-link">
                 Support
-              </Link>
+              </NavLink>
             </li>
             <li className="header-item">
-              <Link to="about" className="header-link">
+              <NavLink to="about" className="header-link">
                 About Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -97,7 +97,7 @@ const Navbar: React.FC<HeaderProps> = ({ state, setState }) => {
           }`}
         >
           <div className="darkmode-toggle">
-            <p style={{ color: 'black' }} id="toggle-dark">
+            <p style={{ color: 'white' }} id="toggle-dark">
               Toggle Dark Mode
             </p>
             <input

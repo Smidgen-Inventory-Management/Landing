@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 [data-theme="light"] {
-  --smidgen-base-primary: 90, 115, 158;
-  --smidgen-base-secondary: 128, 70, 183;
-  --smidgen-base-tertiary: 0, 109, 131;
+  --smidgen-base-primary: 179, 123, 228;
+  --smidgen-base-secondary: 135, 187, 162;
+  --smidgen-base-tertiary: 1, 151, 246;
 
-  --smidgen-base-success: 143, 194, 125;
-  --smidgen-base-warning: 226, 222, 124;
-  --smidgen-base-error: 226, 124, 124;
+  --smidgen-base-success: 111, 208, 140;
+  --smidgen-base-warning: 255, 159, 28;
+  --smidgen-base-error: 215, 38, 61;
 
   --smidgen-base-gray: 170, 170, 170;
   --smidgen-base-white: 255, 255, 255;
@@ -25,13 +25,13 @@
 }
 
 [data-theme="dark"] {
-  --smidgen-base-primary: 110, 135, 178;
-  --smidgen-base-secondary: 153, 93, 206;
-  --smidgen-base-tertiary: 55, 189, 208;
+  --smidgen-base-primary: 179, 123, 228;
+  --smidgen-base-secondary: 135, 187, 162;
+  --smidgen-base-tertiary: 1, 151, 246;
 
-  --smidgen-base-success: 143, 194, 125;
-  --smidgen-base-warning: 255, 204, 102;
-  --smidgen-base-error: 255, 102, 102;
+  --smidgen-base-success: 111, 208, 140;
+  --smidgen-base-warning: 255, 159, 28;
+  --smidgen-base-error: 215, 38, 61;
 
   --smidgen-base-white: 255, 255, 255;
   --smidgen-base-gray: 190, 190, 190;
@@ -111,7 +111,7 @@ a {
 }
 
 a:hover {
-  color: rgb(var(--smidgen-base-secondary));
+  color: rgb(var(--smidgen-base-primary));
   text-decoration: underline;
 }
 
