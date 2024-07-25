@@ -1,13 +1,13 @@
 import '../css/components.css';
 
 enum TextInputCategory {
-  info = "info",
-  text = "text",
-  password = "password",
-  loading = "loading",
-  success = "success",
-  warning = "warning",
-  error = "error"
+  info = 'info',
+  text = 'text',
+  password = 'password',
+  loading = 'loading',
+  success = 'success',
+  warning = 'warning',
+  error = 'error',
 }
 
 interface TextInputProps {
@@ -45,6 +45,7 @@ const TextInput: React.FC<TextInputProps> = ({
       {textArea ? (
         <>
           <textarea
+            required
             autoComplete={autoComplete}
             disabled={disabled}
             className={`text-input ${type}`}
@@ -65,6 +66,7 @@ const TextInput: React.FC<TextInputProps> = ({
       ) : (
         <>
           <input
+            required
             autoComplete={autoComplete}
             disabled={disabled}
             className={`text-input ${type}`}
