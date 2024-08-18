@@ -12,13 +12,6 @@ function FAQ() {
       <div className="content">
         <section>
           <h1 style={{ paddingBottom: '3ex' }}>Frequently Asked Questions</h1>
-          
-          <ButtonGroup>
-            <ButtonGroupItem label="Button" action={() => {}} />
-            <ButtonGroupItem label="Button" action={() => {}} />
-            <ButtonGroupItem label="Button" action={() => {}} />
-            <ButtonGroupItem label="Button" action={() => {}} />
-          </ButtonGroup>
           <Accordion>
             <AccordionItem title="What is Smidgen?">
               <p>

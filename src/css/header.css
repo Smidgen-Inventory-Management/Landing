@@ -2,7 +2,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 999999;
-  margin-bottom: 5ex;
 }
 
 .header-container {
@@ -11,7 +10,7 @@ header {
   align-items: center;
   text-transform: uppercase;
   border-bottom: 2px solid rgb(var(--smidgen-base-white));
-  background-color: rgb(30, 30, 50);
+  background-color: rgb(var(--smidgen-background-color));
   padding: 0 5ch;
 }
 
@@ -24,8 +23,8 @@ header {
 }
 
 .header-section:nth-child(4) {
-  display: flex;
   order: 2;
+  display: flex;
   gap: 3ch;
 }
 
@@ -42,7 +41,6 @@ header {
 }
 
 .header-link {
-  text-transform: uppercase;
   transition: 150ms ease;
   font-weight: 400;
   color: rgb(var(--smidgen-base-white));
@@ -50,7 +48,7 @@ header {
 
 .header-link:hover {
   color: rgb(var(--smidgen-base-primary));
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a.active{

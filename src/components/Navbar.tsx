@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import '../css/navbar.css';
+import '../css/header.css';
 
 interface HeaderProps {
   state: boolean;
